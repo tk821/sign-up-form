@@ -1,0 +1,106 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+} 
+
+* {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica;
+}
+
+body {
+    display: flex;
+}
+
+.left {
+    background-image: url(images/background.jpg);
+    padding-top: 10rem;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    flex: auto;
+}
+
+.sidebar {
+  font-family: norse-bold, system-ui;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  padding: 0.5rem 3rem;
+}
+
+.left>.footer {
+  margin: 1rem auto;
+}
+
+.left>.footer>a{
+  color: white;
+}
+
+#logo {
+  height: 10rem;
+}
+
+.right {
+    flex: auto;
+    padding: 7rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.text>.top {
+  padding-bottom: 1rem;
+}
