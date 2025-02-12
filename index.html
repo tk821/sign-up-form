@@ -27,13 +27,53 @@
             </p>
         </div>
 
-        <form>
-            
+        <form action="/actionpage.php" method="get" id="user">
+            <div class="info">
+                <p>Let's do this!</p>
+
+                <div id="row-1">
+                    <div class="pair" id="first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name">
+                    </div>
+                    <div class="pair" id="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name">
+                    </div>
+                </div>
+
+                <div id="row-2">
+                    <div class="pair" id="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="pair" id="phone-number">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number">
+                    </div>
+                </div>
+
+                <div id="row-3">
+                    <div class="pair" id="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="pair" id="password-confirm">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" name="password-confirm">
+                    </div>
+                </div>
+            </div>
+            <div id="buttons-wrapper">
+                <div class="buttons">
+                    <button id="submit-button" type="submit">Create Account</button>
+                    <div id="log-in">
+                        Already have an account?
+                        <a href="https://wikipedia.com">Log in</a>
+                    </div>
+                </div>
+            </div>
         </form>
-
-        <div class="log-in">
-
-        </div>
     </div>
 </body>
 </html>
